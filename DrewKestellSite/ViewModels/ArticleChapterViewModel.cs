@@ -19,9 +19,6 @@ namespace DrewKestellSite.ViewModels
             ChapterNavigation = chapter.Article.ArticleChapters
                 .OrderBy(c => c.ChapterNumber)
                 .Select(c => Tuple.Create(c.ChapterNumber, c.Name, c.ChapterNumber == chapter.ChapterNumber));
-            Comments = chapter.Article.Comments
-                .Where(c => c.Status == "approved")
-                .Select(c => new ArticleCommentViewModel(c));
         }
         
         public int ArticleId { get; }
@@ -35,7 +32,5 @@ namespace DrewKestellSite.ViewModels
         public int ChapterNumber { get; }
 
         public IEnumerable<Tuple<int, string, bool>> ChapterNavigation { get; }
-
-        public IEnumerable<ArticleCommentViewModel> Comments { get; }
     }
 }
