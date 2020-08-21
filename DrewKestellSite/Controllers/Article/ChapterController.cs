@@ -24,7 +24,6 @@ namespace DrewKestellSite.Controllers.Article
             await analytics.LogRequest(HttpContext);
 
             var chapter = await context.ArticleChapters
-                .Include(c => c.Article.Comments)
                 .Include(c => c.Article.ArticleChapters)
                 .FirstOrDefaultAsync(c => c.ArticleId == articleId && c.ChapterNumber == chapterNumber);
 

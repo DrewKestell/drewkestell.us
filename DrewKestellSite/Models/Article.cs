@@ -8,7 +8,6 @@ namespace DrewKestellSite.Models
         public Article()
         {
             ArticleChapters = new HashSet<ArticleChapter>();
-            Comments = new HashSet<ArticleComment>();
         }
 
         public int Id { get; set; }
@@ -26,7 +25,5 @@ namespace DrewKestellSite.Models
         public string ThumbnailUrl { get; set; }
 
         public virtual ICollection<ArticleChapter> ArticleChapters { get; set; }
-
-        public virtual ICollection<ArticleComment> Comments { get; set; }
     }
 }

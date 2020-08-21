@@ -15,6 +15,8 @@ namespace DrewKestellSite.Data
 
         public DbSet<SiteVisit> SiteVisits { get; set; }
 
+        public DbSet<Pin> Pins { get; set; }
+
         public ApplicationContext(DbContextOptions options)
             : base(options)
         {

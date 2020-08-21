@@ -49,7 +49,7 @@ namespace DrewKestellSite.Controllers.Admin
         [HttpGet("/Admin/Users/")]
         public IActionResult List()
         {
-            var users = context.Users.Select(u => new UserViewModel(u));
+            var users = context.Users.AsQueryable().Select(u => new UserViewModel(u));
             return View("~/Views/Admin/User/List.cshtml", users);
         }
     }

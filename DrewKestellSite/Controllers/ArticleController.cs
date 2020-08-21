@@ -16,8 +16,8 @@ namespace DrewKestellSite.Controllers
             this.context = context;
         }
 
-        [HttpGet]
+        [HttpGet("/Article")]
         public async Task<IActionResult> Index() => 
-            View((await context.Articles.ToListAsync()).Select(a => new ArticleViewModel(a)));
+            View((await context.Articles.AsQueryable().ToListAsync()).Select(a => new ArticleViewModel(a)));
     }
 }

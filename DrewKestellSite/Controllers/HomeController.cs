@@ -14,6 +14,7 @@ namespace DrewKestellSite.Controllers
             this.context = context;
         }
 
+        [HttpGet("/")]
         public async Task<IActionResult> Index()
         {
             var article = await context.Articles

@@ -354,25 +354,6 @@ button {
   padding: 4px 8px;
 }
 
-.comment {
-  padding: 20px;
-  background-color: #f7f7f7;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-.comment p {
-  margin-bottom: 10px;
-  margin-top: 0;
-}
-
-.comment-poster,
-.comment-reply {
-  font-style: italic;
-  font-weight: bold;
-  font-size: 0.8rem;
-}
-
 form {
   margin-bottom: 40px;
 }
@@ -390,6 +371,10 @@ form {
 .comment-divider {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.rss-container {
+    margin-bottom: 40px;
 }
 
 .rss-icon {
@@ -521,27 +506,6 @@ h1 {
     right: 10px;
     top: 6px;
   }
-}
-
-.comments-status {
-  min-height: 24px;
-  margin-bottom: 20px;
-
-  span {
-    display: block;
-
-    &.comments-success {
-      color: #36c736;
-    }
-
-    &.comments-error {
-      color: red;
-    }
-  }
-}
-
-.comments {
-  margin-top: 30px;
 }
 
 .article-container {

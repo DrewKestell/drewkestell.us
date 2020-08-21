@@ -1,0 +1,14 @@
+﻿@using DrewKestellSite.ViewModels
+
+@model IEnumerable<DiscordPinViewModel>
+
+@{
+    ViewData["Title"] = "Pins";
+}
+
+    <div class="content">
+        @foreach (var pin in Model)
+        {
+            <div>@pin.Content</div>
+        }
+    </div>
