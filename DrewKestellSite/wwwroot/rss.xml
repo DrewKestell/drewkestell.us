@@ -172,5 +172,12 @@
       <pubDate>Tue, 17 February 2021 16:00:00 GMT</pubDate>
       <description>In depth discussion of my journey creating a bot for World of Warcraft - Chapter 24 - Hotspots</description>
     </item>
+    <item>
+      <title>BloogBot - Chapter 25</title>
+      <link>http://drewkestell.us/Article/6/Chapter/25</link>
+      <guid>http://drewkestell.us/Article/6/Chapter/25</guid>
+      <pubDate>Tue, 7 June 2021 16:00:00 GMT</pubDate>
+      <description>In depth discussion of my journey creating a bot for World of Warcraft - Chapter 25 - Release</description>
+    </item>
 	</channel>
 </rss>
